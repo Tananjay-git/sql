@@ -1,0 +1,5 @@
+{
+  "db_name": "company.db",
+  "refresh_interval": 15,
+  "enabled": false
+}
