@@ -1,0 +1,54 @@
+pwd — Print Working Directory
+What it does: Shows your current directory path.
+
+ls — List Files and Directories
+What it does: Lists all files and folders in the current directory.
+
+cat — Concatenate and Display File Content
+What it does: Prints file content in the terminal.
+
+mkdir — Make Directory
+What it does: Creates a new folder.
+
+chmod — Change Permissions
+What it does: Changes file access permissions (read, write, execute).
+
+tail — Show Last Few Lines of a File
+What it does: Prints the last 10 lines of a file (by default).
+
+grep — Search Inside Files
+What it does: Searches for a keyword in a file and prints matching lines.
+
+----------------------------------------------------------------------------------------------------------
+
+Mini Practice Challenge
+
+1. Create a folder log_demo
+2. Inside it, create a file server.log with random messages
+3. Use grep to find lines with the word error
+4. Use tail -n 5 to see the latest 5 log entries
+
+
+Tananjay Shrivas@LAPTOP-MG793OMT MINGW64 ~
+$ mkdir log_demo
+
+Tananjay Shrivas@LAPTOP-MG793OMT MINGW64 ~
+$ cd log_demo
+
+Tananjay Shrivas@LAPTOP-MG793OMT MINGW64 ~/log_demo
+$ echo -e "INFO: started\nERROR: failed\nINFO: running\nERROR: crashed" > server.log
+
+Tananjay Shrivas@LAPTOP-MG793OMT MINGW64 ~/log_demo
+$ grep "ERROR" server.log
+ERROR: failed
+ERROR: crashed
+
+Tananjay Shrivas@LAPTOP-MG793OMT MINGW64 ~/log_demo
+$ tail -n 5 server.log
+INFO: started
+ERROR: failed
+INFO: running
+ERROR: crashed
+
+Tananjay Shrivas@LAPTOP-MG793OMT MINGW64 ~/log_demo
+$
